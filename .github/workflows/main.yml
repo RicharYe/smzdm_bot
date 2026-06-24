@@ -6,9 +6,9 @@ name: "GitHub Actions SMZDM Bot"
 # events but only for the main branch
 on:
   push:
-    # branches: [ main ]
   pull_request:
     branches: [ main ]
+  workflow_dispatch:
   schedule:
     - cron: '0 23 * * *'
 
